@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class BinSearch {
+public class BinarySearch {
     int arr[];
     int n;
     BinSearch(int nn) {
@@ -8,7 +8,7 @@ public class BinSearch {
     void fillarray() {
         Scanner x = new Scanner(System.in);
         arr=new int[n];
-        System.out.println("Enter "+n + " elements");   
+        System.out.println("Enter "+ n + " elements");   
         for(int i= 0; i < n ; i++){
         arr[i]=x.nextInt();}
         x.close();
@@ -35,10 +35,10 @@ public class BinSearch {
         else
             return bin_search (m + 1, u, v);
     }
-    public static void main() {
-        BinSearch obj = new BinSearch(7);
+    public static void main(String[] args) {
+        BinarySearch obj = new BinarySearch(7);
         obj.fillarray();
         obj.sort();
-        System.out.println(" location: " + obj.bin_search (0, 4, 20));
+        System.out.println(" location: " + obj.bin_search (0, 6, 20));
     }
 }
