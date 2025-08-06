@@ -21,7 +21,6 @@ public class Emirp{
     }
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        emirp obj = new emirp();
         Emirp obj = new Emirp();
         System.out.println("Emirp Number Checker");
         System.out.println("An Emirp is a prime number that becomes a different prime number when its digits are reversed.");
