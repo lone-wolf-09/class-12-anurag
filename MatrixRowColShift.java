@@ -19,7 +19,7 @@ public class MatrixRowColShift {
     // Function to shift all rows down (last row to top)
     static void shiftRowsDown(int[][] mat) {
         int rows = mat.length;
-        int cols = mat[0].length;
+        //int cols = mat[0].length;
 
         int[] temp = mat[rows - 1]; // Save last row
 
@@ -56,7 +56,7 @@ public class MatrixRowColShift {
     }
 
     // Utility to print matrix
-    static void printMat(int[][] mat) {
+    void printMat(int[][] mat) {
         for (int[] row : mat) {
             for (int val : row)
                 System.out.print(val + " ");
@@ -69,7 +69,7 @@ public class MatrixRowColShift {
         mrcs.input();       
         while (true) {
             System.out.println("\nCurrent Matrix:");
-            mrcs.printMat(matrix);
+            mrcs.printMat(mrcs.matrix);
 
             System.out.println("\nChoose operation:");
             System.out.println("1. Shift Rows Down");
@@ -85,10 +85,10 @@ public class MatrixRowColShift {
 
             switch (choice) {
                 case 1:
-                    shiftRowsDown(matrix);
+                    shiftRowsDown(mrcs.matrix);
                     break;
                 case 2:
-                    shiftColsRight(matrix);
+                    shiftColsRight(mrcs.matrix);
                     break;
                 default:
                     System.out.println("Invalid choice!");

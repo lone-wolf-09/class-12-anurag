@@ -1,10 +1,11 @@
 import java.util.*;
 
-public class SentenceSortVowelsUpper {
+public class SortString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a sentence: ");
         String sentence = sc.nextLine();
+        sc.close();
 
         // Step 1: Split into words and sort
         String[] words = sentence.split("\\s+");

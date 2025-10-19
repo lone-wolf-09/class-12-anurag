@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ConsonantThenVowel {
+public class ShiftAlpha {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a word: ");
@@ -20,5 +20,6 @@ public class ConsonantThenVowel {
 
         String result = cons.toString() + vow.toString();
         System.out.println("Result: " + result);
+        sc.close();
     }
 }
